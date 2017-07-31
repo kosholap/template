@@ -1,0 +1,149 @@
+%btn
+  background-color: #ff6600
+  border-radius: 10px
+  height: 40px
+  width: 160px
+  border: none
+  margin-top: 10px
+  color: #fff
+  font-weight: 700
+  font-size: 16px
+*
+  margin: 0
+  padding: 0
+.header
+  width: 100%
+  height: 60px
+  background-color: #000
+  position: fixed
+  top: 0
+  left: 0
+  display: flex
+  justify-content: space-between
+  padding: 0 5%
+  box-sizing: border-box
+  z-index: 100
+.logo
+  width: 40px
+  height: 40px
+  background-color: #ff6600
+  border-radius: 50%
+  margin-top: 10px
+  margin-right: 120px
+
+.nav
+  width: 400px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &__item
+    border-radius: 2px
+    background-color: #fff
+  &__link
+
+    text-decoration: none
+    padding: 5px 10px
+button
+  @extend %btn
+.start
+  background: url("../images/1.jpg") no-repeat
+  background-size: cover
+  height: 100vh
+  position: relative
+  z-index: 1
+  display: flex
+  justify-content: center
+  align-items: center
+  &::after
+    content: ""
+    width: 100%
+    height: 100%
+    background-color:  #000
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
+    opacity: .5
+  .s_title
+    text-align: center
+    &__text
+      color: #ff6600
+      text-transform: uppercase
+      font-size: 32px
+    &__btn
+      display: flex
+      justify-content: center
+      align-items: center
+
+
+.btn
+  border-radius: 10px
+  height: 40px
+  width: 160px
+  background-color: #ff6600
+  margin: 22px
+.second
+  background-color: #fff
+
+
+.services
+  width: 100%
+  background-color: #ddd
+  padding: 50px
+  text-align: center
+  box-sizing: border-box
+  &__title
+    font-size: 32px
+    font-weight: 700
+    color: #000
+.items
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 50px
+.block
+  height: 250px
+  width: 250px
+  background-color: #000
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  box-sizing: border-box
+  color: #fff
+  &__title
+    text-transform: uppercase
+    font-size: 32px
+    margin-bottom: 20px
+  &__btn
+    @extend %btn
+.subs
+  width: 100%
+  background: url("../images/2.jpeg") no-repeat
+  background-size: cover
+  z-index: 1
+  text-align: center
+  padding: 100px 0
+  box-sizing: border-box
+  position: relative
+  &::after
+    content: ""
+    width: 100%
+    height: 100%
+    background-color:  #000
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
+    opacity: .5
+  &__title
+    color: #ff6600
+    font-size: 32px
+    text-transform: uppercase
+  &__mail
+    margin: 50px 0
+    input
+
+      height: 40px
+  &__btn
+    @extend %btn
